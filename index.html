@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <p>LOGO</p>
+      <p id="total">Możesz jeszcze wydać 0 złotych.</p>
+    </div>
+    <div class="table">
+      <div class="column">
+        <form class="row" id="revenue-form">
+          <p class="heading">PRZYCHODY</p>
+          <div class="input">
+            <input type="text" name="name" placeholder="Nazwa przychodu" />
+            <input type="number" name="amount" placeholder="Kwota" />
+            <button>Dodaj</button>
+          </div>
+        </form>
+        <div class="row fill">
+          <ul class="list" id="revenue-list"></ul>
+        </div>
+        <div class="row">
+          <p>
+            Suma przychodów: <strong><span id="revenues">0</span>zł</strong>
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <form class="row" id="expense-form">
+          <p class="heading">WYDATKI</p>
+          <div class="input">
+            <input type="text" name="name" placeholder="Nazwa wydatku" />
+            <input type="number" name="amount" placeholder="Kwota" />
+            <button>Dodaj</button>
+          </div>
+        </form>
+        <div class="row fill">
+          <ul class="list" id="expense-list"></ul>
+        </div>
+        <div class="row">
+          <p>
+            Suma wydatków: <strong><span id="expenses">0</span>zł</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <template id="list-item">
+      <li>
+        <div class="list-item">
+          <p><span class="name"></span> - <span class="amount"></span>zł</p>
+          <div>
+            <button class="edit">Edytuj</button>
+            <button class="remove">Usuń</button>
+          </div>
+        </div>
+      </li></template
+    >
+  </body>
+</html>
